@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOALATEKK</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --main: #ff0000;
+            --button-bg: #0a0a0a;
+            --text: #ffffff;
+            --font: 'Fira Code', monospace;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+            margin: 0;
+            padding: 30px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            max-width: 480px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .profile-pic {
+            width: 90px;
+            height: 90px;
+            border: 1px solid #333;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .artist-name {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 0;
+            color: var(--main);
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .hard-link {
+            display: flex;
+            align-items: center;
+            background: var(--button-bg);
+            color: var(--text);
+            text-decoration: none;
+            border: 1px solid #222;
+            padding: 12px;
+            transition: 0.2s;
+        }
+
+        .hard-link:hover {
+            border-color: var(--main);
+            background: #111;
+        }
+
+        /* Schwarz-Weiß Icons */
+        .link-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            filter: grayscale(100%) invert(100%); /* Macht schwarze Icons weiß */
+            transition: 0.2s;
+        }
+
+        .hard-link:hover .link-icon {
+            filter: grayscale(0%) invert(0%) sepia(100%) saturate(1000%) hue-rotate(0deg); /* Wird rot beim Hover */
+        }
+
+        .link-text {
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* Musik-Box für mehrere Songs */
+        .music-section {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            border-left: 2px solid var(--main);
+            padding-left: 10px;
+        }
+
+        iframe {
+            border: none;
+            filter: grayscale(100%) contrast(120%);
+            transition: 0.3s;
+        }
+
+        iframe:hover {
+            filter: grayscale(0%);
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap">
+</head>
+<body>
+
+    <header>
+        <img src="https://i1.sndcdn.com/avatars-Hn3a4dx8e8vyEyHs-oMsPIw-t500x500.jpg" alt="HTKK" class="profile-pic">
+        <h1 class="artist-name">[KO.]ala-Tekk]</h1>
+    </header>
+
+    <div class="links-container">
+        
+        <a href="https://soundcloud.com/koalatekk" class="hard-link" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/145/145809.png" class="link-icon" alt="SC">
+            <span class="link-text">SOUNDCLOUD</span>
+        </a>
+
+        <a href="https://www.instagram.com/koala.tekk" class="hard-link" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png" class="link-icon" alt="IG">
+            <span class="link-text">INSTAGRAM</span>
+        </a>
+
+        <a href="koalatekk@gmail.com" class="hard-link">
+            <img src="https://cdn-icons-png.flaticon.com/128/15047/15047587.png" class="link-icon" alt="MAIL">
+            <span class="link-text">CONTACT</span>
+        </a>
+
+    </div>
+
+    <div class="music-section">
+        <div class="section-label">TRACKS</div>
+
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2284662743&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/koalatekk" title="[KO.]ala-Tekk" target="_blank" style="color: #cccccc; text-decoration: none;">[KO.]ala-Tekk</a> · <a href="https://soundcloud.com/koalatekk/eukalyptus-exitus" title="Eukalyptus-Exitus" target="_blank" style="color: #cccccc; text-decoration: none;">Eukalyptus-Exitus</a></div>
+        
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2283080183&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/koalatekk" title="[KO.]ala-Tekk" target="_blank" style="color: #cccccc; text-decoration: none;">[KO.]ala-Tekk</a> · <a href="https://soundcloud.com/koalatekk/melodisches-gefummel" title="Melodisches gefummel" target="_blank" style="color: #cccccc; text-decoration: none;">Melodisches gefummel</a></div>
+ 
+    </div>
+
+</body>
+</html>
